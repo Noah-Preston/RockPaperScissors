@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>RockPaperScissors</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center bg-dark text-light p-5">ROCK PAPER SCISSORS</div>
+    </div>
+  </header>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-12 text text-center p-3">
+        <p>
+          <button type="button" class="btn btn-success"
+            onclick="pickRock(); playGame(); determineWinner(); drawGame(); drawPic()">Rock</button>
+          <button type="button" class="btn btn-danger"
+            onclick="pickPaper(); playGame(); determineWinner(); drawGame(); drawPic()">Paper</button>
+          <button type="button" class="btn btn-warning"
+            onclick="pickScissors(); playGame(); determineWinner(); drawGame(); drawPic()">Scissors</button>
+        </p>
+        <br>
+        <p>
+          <h3 id="player-status">Player's Choice</h3>
+        </p>
+        <br>
+        Your Choice
+        <br>
+        <p>
+          <img id="player-img" class="img-fluid" src="" alt="" height="80" width="80">
+        </p>
+        <br>
+        Computer's Choice
+        <br>
+        <p>
+          <img id="game-img" class="img-fluid" src="" alt="" height="80" width="80">
+        </p>
+        <br>
+        <p>
+          <h3 id="game-status">Computer's choice</h3>
+        </p>
+        <br>
+        <p>
+          <h3 id="outcome-status">Outcome</h3>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
